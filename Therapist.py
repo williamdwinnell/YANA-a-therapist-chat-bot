@@ -1,7 +1,9 @@
 import openai
 
+key = "key-here"
+
 def generate_response(user_input):
-    openai.api_key = "key-here"
+    openai.api_key = the_key
 
     # Use the OpenAI API to generate a response based on the user input
     response = openai.Completion.create(
@@ -14,7 +16,7 @@ def generate_response(user_input):
     return response_str.rstrip()
 
 def generate_therapist_response(user_input):
-    openai.api_key = "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"
+    openai.api_key = the_key
 
     # Use the OpenAI API to generate a response based on the user input
     response = openai.Completion.create(
